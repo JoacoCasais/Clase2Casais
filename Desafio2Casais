@@ -1,0 +1,38 @@
+//Simulador de iluminacion de un departamento: habitación (1), baño (2) y cocina (3).
+let name = prompt("Ingrese su nombre")
+alert(`Hola ${name}!`)
+let parteDepto = Number (prompt(`${name}, ingrese el/los espacios que quiere iluminar (1,2 o 3)`))
+console.log(parteDepto)
+
+if(parteDepto == 1){
+    console.log("Iluminaste la habitación")
+    alert("Iluminaste la habitación")
+}
+else if (parteDepto == 2){
+    console.log("Iluminaste el baño")
+    alert("Iluminaste el baño")
+}
+else if (parteDepto == 3){
+    console.log("Iluminaste la cocina")
+    alert("Iluminaste la cocina")
+}
+else if (parteDepto == 12){
+    console.log("Iluminaste la habitación y el baño")
+    alert("Iluminaste la habitación y el baño")
+}
+else if (parteDepto == 13){
+    console.log("Iluminaste la habitacion y la cocina")
+    alert("Iluminaste la habitación y la cocina")
+}
+else if (parteDepto == 23){ 
+    console.log("Iluminaste el baño y la cocina")
+    alert("Iluminaste el baño y la cocina")
+}
+else if (parteDepto == 123){
+    console.log("Iluminaste todo el departamento")
+    alert("Iluminaste todo el departamento")
+}
+else {
+    console.log("no existe ese sector")
+    alert("no existe ese sector")
+}
